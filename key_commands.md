@@ -21,12 +21,20 @@
 
 - kubectl apply -f myfile.yml
 
+- kubeclt delete  -f myfile.yml ( deletes whatever was created by that yaml file)
+
+- kubectl get deployments
+
 
 * remember that "apply" is a "find or create" method and really the only thing you need to create local deployments 
 
 - kubectl scale deployment <deployment name> --replicas=10
 
 - kubectl scale -f myfile.yml --replicas=10
+
+- kubectl delete pods --all
+
+
 
 
 
