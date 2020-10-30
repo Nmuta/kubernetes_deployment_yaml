@@ -7,7 +7,7 @@
 
 - kubectl get all 
 
-- kubectl run mypod6 --image=nmuta/python_experiment:one 
+- kubectl run monday26 --image=nmuta/python_experiment:one 
 
 - kubeclt delete pod <podname>
 
