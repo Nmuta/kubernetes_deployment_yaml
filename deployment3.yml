@@ -1,31 +1,31 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend
+  name: backend-service
 spec:
   selector:
-    app: web
+    app: backend
+    tier: backend
   ports:
-  - protocol: "TCP"
-    port: 9055
-    targetPort: 8080
-  type: LoadBalancer
+  - protocol: TCP
+    port: 80
+    targetPort: http
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-movies
   labels:
-    app: web
+    app: backend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: web
+      app: backend
   template:
     metadata:
       labels:
-        app: web
+        app: backend
     spec:
       containers:
         - name: spring-movies
