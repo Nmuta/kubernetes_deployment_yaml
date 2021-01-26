@@ -13,9 +13,9 @@
 
 - kubectl port-forward *podname* *port*
 
-- kubectl create *myfile.yml*
+- kubectl create -f *myfile.yml*
 
-- kubectl apply *myfile.yml*
+- kubectl apply -f *myfile.yml*
 
 - kubectl create -f myfile.yml --save-config
 
