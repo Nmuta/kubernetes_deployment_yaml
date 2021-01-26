@@ -21,7 +21,7 @@
 
 - kubectl apply -f myfile.yml
 
-- kubeclt delete  -f myfile.yml ( deletes whatever was created by that yaml file)
+- kubectl delete  -f myfile.yml ( deletes whatever was created by that yaml file)
 
 - kubectl get deployments
 
