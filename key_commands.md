@@ -9,13 +9,13 @@
 
 - kubectl run monday26 --image=nmuta/python_experiment:one 
 
-- kubeclt delete pod <podname>
+- kubeclt delete pod *podname*
 
-- kubectl port-forward <podname> <port>
+- kubectl port-forward *podname* *port*
 
-- kubectl create <myfile.yml or resource>
+- kubectl create *myfile.yml*
 
-- kubectl apply <myfile.yml or resource>
+- kubectl apply *myfile.yml*
 
 - kubectl create -f myfile.yml --save-config
 
@@ -28,7 +28,7 @@
 
 * remember that "apply" is a "find or create" method and really the only thing you need to create local deployments 
 
-- kubectl scale deployment <deployment name> --replicas=10
+- kubectl scale deployment *deployment name* --replicas=10
 
 - kubectl scale -f myfile.yml --replicas=10
 
