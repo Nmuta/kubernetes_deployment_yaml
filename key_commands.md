@@ -9,7 +9,7 @@
 
 - kubectl run monday26 --image=nmuta/python_experiment:one 
 
-- kubeclt delete pod *podname*
+- kubectl delete pod *podname*
 
 - kubectl port-forward *podname* *port*
 
